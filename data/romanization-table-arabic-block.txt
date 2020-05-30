@@ -14,7 +14,7 @@
 ::s ث ::t th ::comment ARABIC LETTER THEH
 ::s ج ::t j ::comment ARABIC LETTER JEEM
 ::s ح ::t h ::comment ARABIC LETTER HAH
-::s خ ::t kh ::comment ARABIC LETTER KHAH
+::s خ ::t h ::comment ARABIC LETTER KHAH
 ::s د ::t d ::comment ARABIC LETTER DAL
 ::s ذ ::t th ::comment ARABIC LETTER THAL
 ::s ر ::t r ::comment ARABIC LETTER REH

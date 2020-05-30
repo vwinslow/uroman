@@ -7,6 +7,10 @@ Release date: January 6, 2020
 Author: Ulf Hermjakob, USC Information Sciences Institute  
 
 
+### Requirements
+ * Dancer2
+   * `apt-get install gcc make cpanminus; cpanm install Dancer2;`
+
 ### Usage
 ```bash
 $ uroman.pl [-l <lang-code>] [--chart] [--no-cache] < STDIN
