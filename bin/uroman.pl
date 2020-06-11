@@ -37,6 +37,15 @@ post '/' => sub {
 	#print "Romanized result is: " . "@romanized\n";
 	send_as JSON => { "romanized" =>  [@romanized] } ;
 };
+my %hash;
+open my $fh, '<', 'data/replacement.csv' or die "Cannot open: $!";
+while (my $line = <$fh>) {
+	$line =~ s/\s*\z//;
+	my @array = split /,/, $line;
+	my $key = lc shift @array;
+	$hash{$key} = lc shift @array;
+}
+close $fh;
 start;
 sub romanizeText {
 	my $bin_dir = abs_path(dirname($0));
@@ -108,7 +117,15 @@ sub romanizeText {
 	   } else {
 		  $resultString .=$romanizer->romanize($line, $lang_code, "", *ht, *pinyin_ht, 0, "", $line_number);
 	   }
-	#print "romanized line in func is: " . $resultString . "\n";
+	my @names = split /_/, $resultString;
+	foreach $name (@names) {
+		#print "Checking if " . $name . " exists\n";
+		if (exists($hash{$name})) {
+			$name = $hash{$name};
+			#print "Replaced " . $name . "\n";
+		}
+	}
+	$resultString = join("_", @names);
 	push @result, $resultString;
 	$resultString = "";
    }
