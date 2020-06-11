@@ -1175,7 +1175,7 @@
 ::s ئې ::t e ::lcode uig ::latinplus ë
 ::s ې ::t e ::lcode uig ::latinplus ë
 ::s ئە ::t e ::lcode uig
-::s يە ::t e ::lcode uig
+::s يە ::t ye ::lcode uig
 ::s ئى ::t i ::lcode uig
 ::s ى ::t i ::lcode uig
 ::s ئو ::t o ::lcode uig
@@ -1186,7 +1186,7 @@
 ::s خ ::t h ::lcode uig
 ::s ژ ::t j ::lcode uig
 ::s ئۆ ::t oe ::t-alt o ::lcode uig ::latinplus ö
-::s ۆ ::t oe ::t-alt o ::lcode uig ::latinplus ö
+::s ۆ ::t o ::t-alt o ::lcode uig ::latinplus ö
 ::s ئۈ ::t ue ::t-alt u ::lcode uig ::latinplus ü
 ::s ۈ ::t ue ::t-alt u ::lcode uig ::latinplus ü
 ::s ۋ ::t w ::lcode uig
