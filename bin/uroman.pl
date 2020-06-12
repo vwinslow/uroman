@@ -117,7 +117,7 @@ sub romanizeText {
 	   } else {
 		  $resultString .=$romanizer->romanize($line, $lang_code, "", *ht, *pinyin_ht, 0, "", $line_number);
 	   }
-	my @names = split /_/, $resultString;
+	my @names = split /[^\w]/, $resultString;
 	foreach $name (@names) {
 		#print "Checking if " . $name . " exists\n";
 		if (exists($hash{$name})) {
@@ -125,7 +125,7 @@ sub romanizeText {
 			#print "Replaced " . $name . "\n";
 		}
 	}
-	$resultString = join("_", @names);
+	$resultString = join(" ", @names);
 	push @result, $resultString;
 	$resultString = "";
    }
