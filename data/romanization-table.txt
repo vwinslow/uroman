@@ -1187,7 +1187,7 @@
 ::s ژ ::t j ::lcode uig
 ::s ئۆ ::t o ::t-alt o ::lcode uig ::latinplus ö
 ::s ۆ ::t o ::t-alt o ::lcode uig ::latinplus ö
-::s ئۈ ::t ue ::t-alt u ::lcode uig ::latinplus ü
+::s ئۈ ::t u ::t-alt u ::lcode uig ::latinplus ü
 ::s ۈ ::t u ::t-alt u ::lcode uig ::latinplus ü
 ::s ۋ ::t w ::lcode uig
 
